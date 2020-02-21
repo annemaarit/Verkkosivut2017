@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+	<title>Hakulomake</title> 
+	<meta charset="utf-8"/> 
+	<link rel="stylesheet" href="ot3c.css">
+</head> 
+  <body class="alustus"> 
+	<div id="tausta" class="leveys">
+		<header>MYYTÄVÄT JA VUOKRATTAVAT ASUNNOT</header>
+		<form class="lomake leveys">
+		  <div id="alkuosa">
+			<label for="alue">Alue</label><input class="tekstikentta1" type="text" id="alue">
+			<span class="esim">Esimerkiksi postinumero tai kunta</span>
+		  </div>
+		  <div class="palstat">
+			<div class="palsta vasen">
+			  <label for="asunto">Asuntotyyppi</label>
+			  <select name="tyyppi">
+				<option value="kerros">Kerrostalo</option>
+  				<option value="rivi">Rivitalo</option>
+  				<option value="pari">Paritalo</option>
+  				<option value="oma">Omakotitalo</option>
+			  </select>
+			
+			  <label for="lammitys">Lämmitysmuoto</label>
+			  <select name="lampo">
+				<option value="kauko">Kaukolämpö</option>
+  				<option value="sahko">Sähkö</option>
+  				<option value="maa">Maalämpö</option>
+  				<option value="oljy">Öljy</option>
+				<option value="puu">Puu</option>
+			  </select>
+
+			  <label for="huoneluku">Huoneluku</label>
+			  <select name="huone">
+				<option value="yksi">1</option>
+  				<option value="kaksi">2</option>
+  				<option value="kolme">3</option>
+  				<option value="nelja">4</option>
+				<option value="viisi">5</option>
+				<option value="yliviisi">&gt;5</option>
+			  </select>
+			
+			  <label for="neliot">Neliöitä</label>
+			  <select name="koko">
+				<option value="alle30">alle 30</option>
+  				<option value="30_60">30-60</option>
+  				<option value="60_90">60-90</option>
+  				<option value="90_120">90-120</option>
+  				<option value="120_140">120-140</option>
+  				<option value="yli150">yli 150</option>
+			  </select>
+			</div>
+			<div class="palsta oikea">
+			  <label for="minhinta">Minimihinta</label><input class="tekstikentta2" type="text" id="minhinta"> <br>
+			  <label for="maxhinta">Maksimihinta</label><input class="tekstikentta2" type="text" id="maxhinta"> <br>
+			  
+			  <label for="asuntokunto">Asunnon kunto</label>
+			  <select name="kunto">
+				<option value="uusi">Uusi</option>
+  				<option value="erittain">Erittäin hyvä</option>
+  				<option value="hyva">Hyvä</option>
+  				<option value="valttava">Välttävä</option>
+				<option value="huono">Huono</option>
+			  </select>
+			  
+			  <label for="m2">m&sup2;</label>
+			  <input type="radio" name="hallinta" value="omistus"><span>Omistus</span>
+  			  <input type="radio" name="hallinta" value="vuokra"><span>Vuokra</span>
+			</div>
+		  </div>
+		  <div>
+			<img class="nappi" src="hakunappi.jpg" alt="HAKU" onclick="alert('Haku lähetetty')">
+		  </div>
+		</form>
+	</div>
+  </body>
+</html>

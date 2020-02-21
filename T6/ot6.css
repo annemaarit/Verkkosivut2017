@@ -1,0 +1,125 @@
+/*Maarit Parkkonen, ot6.css*/
+
+body {
+	width: 960px;
+	margin: auto;
+	background-image:url('images/bg.png');
+	background-size: cover;
+	/*border: 2px solid red;*/
+}
+/*vaakavalikko*/
+#nav1{
+	height: 80px;
+	background-image:url('images/bg_nav.png');
+	margin-bottom:10px;
+	margin-top:10px;
+}
+#nav1 ul{
+	height:30px;
+	margin:0;
+	padding:0;
+}
+
+#nav1 li {
+	list-style-type:none;
+	float:left;
+	position:relative;
+	top:25px;
+	text-align:center;
+	color: #000000;
+	text-transform: uppercase;
+	display:block;
+	width:110px;
+	border-right: 1px solid #f0ff00;
+	padding:5px;
+	/*background-color:#3d3d66;*/
+}
+
+#nav1 a {
+	color:#ffffff;
+	text-decoration:none;
+}
+
+#nav1 a:hover, #nav1 li:hover {
+	display:block;
+	width:110px;
+	color: #000000;	
+	text-align:center;
+	background-image:url('images/hover_nav.png');
+	background-repeat: repeat-x;
+}
+/*----------------------*/
+
+#videot, #nav2, .footer {
+	background-color: #0C383B;	
+}
+
+#videot, #nav2 {
+	padding: 10px 30px 30px 30px;
+}
+
+#videot {
+	width: 320px;
+	height: 180px; 
+}
+
+/*pystyvalikko*/
+#nav2, #nav2 ul {
+	float:right;
+	width:100px;
+	margin:0;
+}
+
+#nav2 ul {
+	padding:0px;	
+}
+
+#nav2 li{
+	list-style-type:none;
+	float:right;
+	position:relative;
+	text-align:center;
+	display:block;
+	width:100px;
+	border: 2px groove #888888;
+	font-family:Arial;
+	padding:5px;
+	background-color:#d83417;
+}
+
+#nav2 li > ul {
+	display:none;
+	position:absolute;
+	right:110px;
+	top:5px;
+}
+
+#nav2 li:hover > ul{
+	display:block;
+}
+
+#nav2 a{
+	text-decoration:none;
+	color:#ffffff;
+}
+
+#nav2 a:hover,
+#nav2 li:hover,
+#nav2 ul li:hover,
+#nav2 ul li a:hover,
+#nav2 ul li a:active {
+display:block;
+width:100px;
+height:20px;
+text-align:center;
+background-color:#f6755e;
+}
+/*----------------*/
+
+.footer{
+	text-align:center;
+	color: #f0ff00;
+	border-bottom: 2px solid #f0ff00;
+	border-top: 2px solid #f0ff00;
+	margin-top:10px;
+	}

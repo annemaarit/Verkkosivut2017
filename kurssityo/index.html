@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- 	file: index.html
+		desc: Norja 2017 matkapäiväkirjan pääsivu
+			  kaikkien kohteiden esittelykortit ja matkan infokortit
+		date: 18.12.2017
+		auth: Maarit Parkkonen -->
+<html>
+
+<head>
+	<meta charset="utf-8"/> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/norja.css">	
+	<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <div id="tausta">
+	<div id="header">
+		<h1 id="paaotsikko">Matkalla Norjassa 2017</h1>
+	</div><!--header-->		
+
+	<!--navigointipalkki-->	
+	<!--alasvetolistan mallina: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover-->
+	<div class="navilinkit">
+		<a href="#"><button class="navipainike passiivi">Etusivu</button></a>
+		<div class="alasveto">
+			<button class="navipainike aktiivi nuoli">Kohteet</button>
+			<div class="vetolista">
+				<a class="aktiivi" href="junkerdal.html">Junkerdal</a>
+				<a class="aktiivi" href="tranoy.html">Tranoy</a>
+				<a class="aktiivi" href="lofootit.html">Lofootit</a>
+			</div><!--vetolista-->
+		</div><!--alasveto-->
+		<a href="info.html"><button class="navipainike aktiivi">Info</button></a>
+		<a href="vihje.html"><button class="navipainike aktiivi">Anna vihje</button></a>	
+	</div><!--navilinkit-->
+	
+		
+	<div class="palsta_jako">
+		<div class="vasen_palsta">
+			
+			<!--kohdesivukortti-->
+			<a href="junkerdal.html">
+				<div class="sisalto">
+					<h2>Junkerdal</h2>
+					<h3>Jylhiä vuoria, reheviä laaksoja, 20.8.2017</h3>
+					<img src="kuvat/index/junkerdal.jpg">
+					<p>Ylitimme Norjan rajan Junkerdalin kohdalla. Vajaa tuntia aiemmin maisemat olivat alkaneet
+					Ruotsin puolella muuttua vuoristomaiseksi. Ensimmäinen yli kilometrin korkuinen vuori aiheutti perheessämme 
+					suurta innostusta..</p>
+				</div><!--sisalto-->
+			</a>
+			
+			<!--kohdesivukortti-->
+			<a href="tranoy.html">	
+				<div class="sisalto">
+					<h2>Tranoy</h2>
+					<h3>Majakka Norjanmeren rannalla, 21.8.2017</h3>
+					<img src="kuvat/index/tranoy.jpg">
+					<p>Tranoyn majakka sijaitsee Norjan luoteisosassa, Hamaroystä pohjoiseen Norjanmeren rannalla pienellä kalliosaarella. 
+					Se on ollut toiminnassa vuodesta 1864 lähtien..</p>
+				</div><!--sisalto-->
+			</a>
+			
+			<!--kohdesivukortti-->
+			<a href="lofootit.html">
+				<div class="sisalto">
+					<h2>Lofootit - Å</h2>
+					<h3>Tie päättyy - olemme perillä, 22.8.2017</h3>
+					<img src="kuvat/index/lofootit.jpg">
+					<p>Lofootit on saariryhmä Pohjois-Norjassa. Saarille on kiinteä tieyhteys mantereelta valtatie E10 pitkin.
+					Tie kulkee saarten läpi siltojen ja tunneleiden kautta ja päättyy Moskenesøyan Å:ssa. Lofootit on pohjolan
+					paratiisi..</p>
+				</div><!--sisalto-->
+			</a>
+		</div><!--vasen_palsta-->
+  
+		<div class="oikea_palsta">
+			<!--inforeunan sivukortti-->
+			<div class="sisalto_reuna">
+				<h3>Me</h3>
+				<img src="kuvat/index/perhe.jpg">
+				<p>Norjan matka kesällä 2017 oli meidän perheemme ISO reissu. Se oli tärkeä monesta syystä ja kovin odotettu.</p>
+			</div><!--sisalto_reuna-->
+	
+			<!--inforeunan sivukortti-->
+			<div class="sisalto_reuna">
+				<h3>Info</h3>
+				<img src="kuvat/index/pienikartta.gif">
+				<!--lähde:http://tuomas.salste.net/doc/matkat/norja4.png-->
+				<p>Reissumme <a href="info.html" class="alleviivaa">perustiedot.</a></p>
+			</div><!--sisalto_reuna--> 
+
+			<!--inforeunan sivukortti-->
+			<div class="sisalto_reuna">
+				<a href="vihje.html"><button class="painike">Lähetä vihje!</button></a>
+				<p>Norja vei meidän sydämemme ja palaamme vielä takaisin.</p>
+			</div><!--sisalto_reuna-->
+		</div><!--oikea_palsta-->
+	</div><!--palsta_jako-->
+
+	<div class="tekija">
+		<p>Copyright &copy; Maarit Parkkonen, 18.12.2017</p>
+	</div><!--tekija-->
+  </div><!--tausta-->
+</body>
+</html>

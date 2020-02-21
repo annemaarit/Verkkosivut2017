@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<!-- 	file: vihje.html
+		desc: Norja 2017 matkapäiväkirja, 
+			  lomake käyttäjälle hänen hyvistä matkakohteista
+		date: 19.12.2017
+		auth: Maarit Parkkonen -->
+<html> 
+
+<head>
+	<title> Lofootit - Norja 2017 </title> 
+	<meta charset="utf-8"/> 
+	<link rel="stylesheet" href="css/norja.css">
+	<link rel="stylesheet" href="css/vihje.css">
+</head> 
+  
+  <body> 
+	<div id="tausta">
+		<div id="header">
+			<h1 id="paaotsikko"> Matkalla Norjassa 2017 </h1>
+		</div><!--header-->
+		
+		<!--navigointipalkki-->	
+		<!--alasvetolistan mallina: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover-->
+		<div class="navilinkit">
+			<a href="index.html"><button class="navipainike aktiivi">Etusivu</button></a>
+			<div class="alasveto">
+				<button class="navipainike aktiivi nuoli">Kohteet</button>
+				<div class="vetolista">
+					<a class="aktiivi" href="junkerdal.html">Junkerdal</a>
+					<a class="aktiivi" href="tranoy.html">Tranoy</a>
+					<a class="aktiivi" href="lofootit.html">Lofootit</a>
+				</div><!--vetolista-->
+			</div><!--alasveto-->
+			<a href="info.html"><button class="navipainike aktiivi">Info</button></a>
+			<a href="#"><button class="navipainike passiivi">Anna vihje</button></a>	
+		</div><!--navilinkit-->
+		
+		<!--iso kuva-->
+		<div class="palsta1">
+			<img src="kuvat/vihje/henkienmaja.jpg" alt="henkienmaja">
+		</div><!--palsta1-->
+		
+		<!--vihjelomake-->
+		<div class="palsta2 sisalto">
+			<h2>Vihje</h2>	
+			<form class="lomake">
+				<fieldset class="lomakeryhma">
+					<legend class="otsikko">Suosittelen:</legend>
+					<label for="nahtavyys">Nähtävyyttä:</label><input class="tekstikentta" type="text" id="nahtavyys">
+					<label for="ruokapaikka">Ruokapaikkaa:</label><input class="tekstikentta" type="text" id="ruoka">
+					<label for="majoitus">Majoitusta:</label><input class="tekstikentta" type="text" id="majoitus">
+				</fieldset>
+	
+				<fieldset class="lomakeryhma">
+					<legend class="otsikko">Paras osa Norjaa on:</legend>
+  					<input type="radio" name="osa" value="pohjoinen"><span class="teksti">Pohjois-Norja</span>
+  					<input type="radio" name="osa" value="keski"><span class="teksti">Keski-Norja</span>
+  					<input type="radio" name="osa" value="etela"><span class="teksti">Etelä-Norja</span><br>
+					<p>.. ja miksi?</p>
+					<textarea name="perustelu" id="perustelu" class="tekstialue">
+					</textarea>
+				</fieldset>
+		
+				<fieldset class="lomakeryhma">
+					<legend class="otsikko" >Olin matkalla:</legend>
+					<label for="vuosi">Vuosi</label><input class="lyhyt_tekstikentta" type="text" id="vuosi"> <br>
+					<label for="vuodenaika">Vuodenaika</label>
+					<select name="vuodenaika">
+						<option value="kevat">Kevät</option>
+						<option value="kesa">Kesä</option>
+						<option value="syksy">Syksy</option>
+						<option value="talvi">Talvi</option>
+					</select>
+				</fieldset>
+		
+				<button class="painike">Lähetä</button>
+			</form>
+		</div><!--palsta2 & sisalto-->
+
+		<div class="tekija clear">
+			<p>Copyright &copy; Maarit Parkkonen, 19.12.2017</p>
+		</div><!--tekija-->
+	</div><!--tausta-->
+
+  </body>
+</html>

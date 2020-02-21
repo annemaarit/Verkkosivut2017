@@ -1,0 +1,202 @@
+/* 	file: norja.css
+	desc: Norja 2017 matkapäiväkirjan sivujen yhteiset tyylit
+	date: 10.12.2017
+	auth: Maarit Parkkonen */
+
+/*perusrunko*/
+ body {
+	padding: 20px;
+	margin: 0px;
+	background-image:url("../kuvat/tausta_1250.jpg");
+	background-attachment: fixed;
+	font-family: Helvetica, Arial;
+}
+
+#tausta {
+	width: 1200px;
+	padding: 20px;
+	margin: auto; 
+	background-color: rgba(0,0,0,0.1);
+	border: 2px #ffffff solid;
+}
+
+@font-face{
+	font-family:talvifontti;
+	src:url("Cartoon Blocks Christmas.woff");
+}
+
+/*otsikkojen tyylit*/
+ h1,h2,h3, .navilinkit, #linkkilista, .navipainike, .painike {
+	 font-family: Comic Sans Ms, Helvetica, Arial;
+	 margin: 0px;
+}
+	
+h1,h2,h3, #linkkilista {
+	 padding: 5px;
+}
+	
+ h1 {
+	font-size: 50px;
+	text-align: center;
+	letter-spacing: 2px;
+}
+	
+ h2 {
+	font-size: 30px;
+	/*text-align: center;*/
+	color: #fb1b1b;
+}
+	
+ h3 {
+	font-size: 20px;
+	/*text-align: center;*/
+	color:#000000;
+}
+	
+#tausta h1, #tausta h2, #tausta h3 {
+	text-align: center;
+}
+
+p {
+	padding: 10px;
+	font-size: 16px;
+	line-height:1.4em;
+}
+	
+h1#paaotsikko{
+	font-family: talvifontti;	
+	color:white;
+}
+
+#header, .tekija {
+	background-color: #27408B;/*#262b8d;*/
+	padding: 5px;	
+	/*border: 2px solid red;*/
+}
+
+/* navigointipalkki ja alasvetolista */
+.navilinkit, .navipainike, .painike {
+	background-color: #90a5e3;
+}
+
+.navipainike {
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+	text-shadow: -2px 2px 2px #111111;
+    border: none;
+    cursor: pointer;
+	width:150px;
+}
+
+.nuoli {
+	cursor: default;	
+}
+
+.alasveto {
+    position: relative;
+    display: inline-block;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+.vetolista {
+    display: none;
+    position: absolute;
+    width: 150px;
+	-moz-box-shadow: -10px 8px 16px 0px rgba(0,0,0,0.4);
+	-webkit-box-shadow: -10px 8px 16px 0px rgba(0,0,0,0.4);
+    box-shadow: -10px 8px 16px 0px rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+.vetolista a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.alasveto:hover .vetolista {
+    display: block;
+}
+
+.painike:hover, .vetolista a.aktiivi:hover, .navipainike.aktiivi:hover{
+    background-color: #bdcaf0;
+	color: #ffffff;
+}
+
+/* passiivinen navilinkki */
+.passiivi {
+	color: #fb1b1b;
+	text-shadow: -2px 2px 2px #ffffff;
+	text-transform: uppercase;
+	cursor: default;
+	/*background-color: #9ba1bb;*/
+}
+
+a.passiivi {
+	color: #fb1b1b;
+}
+
+.painike {
+    color: #000000;
+    padding: 16px;
+    font-size: 18px;
+    border:2px blue outset;
+    cursor: pointer;
+	width: 150px;	
+	display:block;
+	margin: auto;	
+}
+
+/* pyöristetyt sisältöjen taustat */
+.sisalto, .sisalto_reuna {
+     padding: 20px;
+     margin-top: 20px;
+	 border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+}
+
+.sisalto {
+     background-color: white;	
+}
+
+.sisalto, .sisalto_reuna {
+	 box-shadow: 5px 5px 5px #888888;	
+}
+
+.sisalto_reuna, .lomakeryhma, .vetolista {
+	background-color: #ebeefb;
+}
+	
+.clear {
+	 clear: left;
+}	
+	
+.palstat {
+	column-count: 2;
+	-webkit-column-count:2; /*safari*/
+	-moz-column-count:2; /*firefox*/
+	padding: 5px;
+	padding-bottom:10px;
+	/*border:1px solid green;*/
+}
+
+
+#lahde {
+	font-size: 14px;
+	font-style: italic;
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+	
+	
+.tekija {
+    margin-top: 20px;	
+	font-size: 14px;
+	color: white;
+	text-align: center;
+}
+

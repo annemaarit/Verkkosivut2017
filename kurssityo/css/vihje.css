@@ -1,0 +1,76 @@
+/* 	file: vihje.css
+	desc: Norja 2017 matkapäiväkirjan vihje -sivun tyylit
+	      Huom! sivujen yhteiset tyylit norja.css tiedostossa
+	date: 19.12.2017
+	auth: Maarit Parkkonen */
+
+/*perusrunko*/
+.palsta2{
+	width:600px;
+	/*border: 1px red solid;*/
+}
+
+.palsta1{
+	width:550px;
+	/*border: 1px green solid;*/
+}
+ 
+.palsta1, .palsta2 {
+	float: left;
+}
+
+	
+img {
+	padding: 20px;
+	padding-top:30px;
+	width: 500px;
+	margin: auto;
+}
+
+.lomake {
+	font-size: 14px;
+	width: 600px;
+	/*border: 1px solid #000*/
+}
+	
+legend.otsikko, input.nappi {
+	color: #fff;
+	background-color: #27408B;
+	margin-left: 2px;
+	padding: 3px;
+	font-weight: bold;
+}
+
+.lomakeryhma {
+	padding: 15px;
+	margin-bottom: 10px;
+	border-color: #4A2885;
+}
+	
+label {
+	width:150px;
+	float: left;
+	display: block;
+	font-weight: bold;
+}
+	
+.tekstialue{
+	width: 400px;
+	height: 200px;
+}
+	
+.tekstikentta, .lyhyt_tekstikentta {
+	background-color: #FFF;
+}
+
+.tekstikentta {
+	width: 350px;
+}
+
+.lyhyt_tekstikentta {
+	width: 100px;
+}
+	
+.teksti, input, label{
+	margin-bottom: 5px;
+}

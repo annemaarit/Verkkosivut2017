@@ -1,0 +1,38 @@
+	.lomake {
+		font-family: Verdana, Helvetica, sans-serif;
+		float: left; 
+		width: 400px;
+		border: 1px solid #000;
+		padding: 10px;
+		background-color: #e6d7f2;
+		margin: auto;
+	}
+	.lomake.vasen {
+		width: 30%;
+		border: none;
+	}
+	.lomake.oikea {
+		width:50%;
+		border: none;		
+	}
+	.lomake:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	label{
+		width:150px;
+		float: left;
+		display: block;
+		margin-bottom: 4px;
+	}
+	.teksti {
+		width: 180px;
+	}
+	.nappi {
+		border: 1px solid #000;
+		color: #fff;
+		font-weight: bold;
+		background-color: #ed717a;
+		margin-top: 10px;
+	}

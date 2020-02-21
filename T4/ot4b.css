@@ -1,0 +1,152 @@
+	/*Maarit Parkkonen, ot4b.css*/
+	
+	img, body, ul {
+		margin: 0px;
+		padding: 0px;
+	}
+	body {
+		font-family: Times New Roman, serif;
+		}	
+	h1 {
+		font-size: 20px;
+	}
+	h2 {
+		font-size: 14px;
+	}
+	h3 {
+		font-size: 12px;
+		font-weight: bold;
+	}
+	h1.intro{
+		margin: 0px;
+		margin-left: 5px;
+		padding: 0px;	
+		font-family: Broadway, sans-serif;
+		font-size: 35px;
+		color: white;
+	}
+	h1.intro:first-letter {
+		font-size: 60px;
+	}
+	#content {
+		width: 960px;
+		margin: auto;
+		border: 1px solid grey;
+	}	
+	#header, #footer, .h2list {
+		background-color: #6699CC;	
+	}
+	#header {
+		height: 295px; 
+	}	
+	.teksti {
+		margin: 0;
+		padding: 0;
+		width: 100px;
+		height: 20px;
+		float: right;
+		background-color: #f6f6c0;
+	}
+	.hakunappi {
+		width: 52px;
+		height:27px;
+		margin-right: 5px;
+		margin-left: 5px;
+		float: right;
+	}
+	.teksti, .hakunappi {
+		position: relative;
+		top: 30px;
+	}
+	ul.navi {
+		font-size: 20px;
+		color: white;
+		list-style-type: none;
+		overflow: hidden;
+		}
+
+	li.navi {
+		
+		}
+	li a.navi {
+		display: block;
+		color: white;
+		text-decoration: none;
+		padding-right:10px; 
+		padding-left:10px;
+		float: left;
+		}
+	li a.navi:hover, li a.navi:active {
+		background-color: #0b195e;
+		}	
+		
+	ul.resource {
+		list-style-type: none;
+		}
+	li.resource, li.lastlist {
+		border-bottom:1px solid #000000;
+		padding:10px;
+		}
+	li.lastlist {
+		border:none;
+	}
+	li a.resource{
+		text-decoration: none;
+		padding-left:10px;
+		}
+	.h2list {
+		font-size:22px;
+		color: #ffffff;
+		padding: 2px;
+		}
+	.kuva1 {
+		width: 960px;
+		height:201px;
+		}
+	.kuva2 {
+		width: 116px;
+		height:131px;
+		}
+	.kuva3 {
+		width: 80px;
+		height:85px;
+		}
+	.kuva4 {
+		width: 80px;
+		height:83px;
+		}
+	.kuva2, .kuva3, .kuva4 {
+		float: right;
+		margin-left: 5px;
+		margin-bottom: 5px;
+		}
+	.col1, .col2, .col3{
+		width: 210px;
+		padding: 10px;
+		float: left;
+		}
+	.col1{
+		font-family: Verdana, Sans-Serif;
+		font-size: 12px;
+	}
+	.col2{
+		width: 460px;
+		font-family: Times New Roman, Serif;
+		font-size: 16px;	
+	}
+	
+	.col2, .rapidus{
+		line-height: 1.3em;	
+	}
+	
+	.rapidus{
+		color: #01406f;
+		}
+
+	#footer{
+		clear: left;
+		text-align: center;
+		color: #0b195e;
+	}
+
+	

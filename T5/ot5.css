@@ -1,0 +1,184 @@
+/*Maarit Parkkonen, ot5.css*/
+
+body {
+	width: 960px;
+	margin: auto;
+}
+
+header, footer {
+    display: block; 
+} 
+
+@font-face{
+	font-family:talvifontti;
+	src:url("Cartoon Blocks Christmas.woff");
+}
+
+@keyframes dropdown{
+	0%{left:0px; top:-200px;}
+	40%{left:0px; top:0px;}
+	50%{left:0px; top:-30px;}
+	70%{left:0px; top:0px;}
+	85%{left:0px; top:-20px;}
+	90%{left:0px; top:0px;}
+	95%{left:0px; top:-10px;}
+	100%{left:0px; top:0px;}
+}
+
+h1.omanimi, footer p{
+	font-family: talvifontti;	
+}
+
+h1.omanimi {
+	display: inline;
+	font-size: 40px;
+	position:relative;
+	animation:dropdown 2s;
+	clear:both;
+}
+
+h2 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 20px;
+	color: #FF6600;
+	font-weight: bold;
+	text-shadow: 2px 1px 1px #888888;
+}
+
+header{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #000000;
+	}
+	
+footer {
+	border-top: 1px solid #000000;
+}
+
+.palstat {
+	column-count: 3;
+	-webkit-column-count:3; /*safari*/
+	-moz-column-count:3; /*firefox*/
+	padding: 5px;
+	padding-bottom:10px;
+	/*border:1px solid green;*/
+	}
+
+.main {
+	margin-bottom: 10px;
+	}
+	
+.main, .palstat, #laatikko, #navit a:link, #navit a:visited{
+    box-shadow: 5px 5px 5px #888888;
+}
+
+#laatikko {
+	width: 200px;
+    height: 175px;	
+	font-family: Verdana, sans-serif;
+	font-size: 14px;
+	border-radius: 15px;
+    border: 1px solid #000000;
+    padding: 5px; 
+	margin: 10px;
+	margin-left: 0px;
+	}
+
+#navit{
+	width:450px;
+	height:20px;
+	float: right;
+/*border:1px solid red;*/
+}
+
+#navit ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	padding-top:10px;
+	float: right;
+}
+
+#navit li{
+	display:inline;
+	float:left;
+}
+
+#navit a:link, a:visited{
+	display:block;
+	width:100px;
+	height:20px;
+	font-weight:bold;
+	color:#000000;
+	background-color:#FFFF66;
+	text-align:center;
+	padding:4px;
+	text-decoration:none;
+	text-transform:uppercase;
+	border: 1px solid black;
+	border-radius:2px;
+	/*box-shadow: 5px 5px 5px #888888;*/
+}
+
+#navit a:hover, a:active{
+	background-color:#b6c0d2;
+	transform:rotate(-3deg);
+	-webkit-transform: rotate(-3deg); /* Safari */
+	-moz-transform: rotate(-3deg);/*firefox*/
+	transition:1s;
+}
+
+img {
+	width: 140px;
+	height: 140px;
+	margin: 10px 40px 10px 40px;
+	border-radius:70px;
+	background-color: #FF6600;
+	float: right;
+    transition: width 1s;	
+	-webkit-transition: width 1s; /* Safari 3.1 - 6.0 */
+	-moz-transition: width 1s; /*firefox*/
+}
+
+img:hover{
+    width: 170px;
+	height:170px;
+	/*opacity: 1; ei toimi näin..*/
+	border-radius:85px;
+	transform:rotate(360deg);
+	-webkit-transform: rotate(360deg); /* Safari */
+	-moz-transform: rotate(360deg);/*firefox*/
+	transition:1s;
+}
+
+ img#pallo75{
+	 opacity: 0.75;
+	 filter: alpha(opacity=75); /*IE8 ja aiemmat*/
+ }
+ 
+ img#pallo50{
+	 opacity: 0.5;
+	 filter: alpha(opacity=50);/*IE8 ja aiemmat*/
+ }
+ 
+ img#pallo25{
+	 opacity: 0.25;
+	 filter: alpha(opacity=25);/*IE8 ja aiemmat*/
+ }
+ img#pallo10{
+	 opacity: 0.10;
+	 filter: alpha(opacity=10);/*IE8 ja aiemmat*/
+ }
+ 
+ img#pallo75:hover, img#pallo50:hover, img#pallo25:hover, img#pallo10:hover{
+	 opacity: 1;
+	 filter: alpha(opacity=100); /*IE8 ja aiemmat*/
+ }
+ 
+footer p {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-size: 20px;
+	}

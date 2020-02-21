@@ -1,0 +1,46 @@
+/* 	file: lofootit.css
+	desc: Norja 2017 matkapäiväkirjan lofootit -sivun tyylit
+	      Huom! sivujen yhteiset tyylit norja.css tiedostossa
+	date: 15.12.2017
+	auth: Maarit Parkkonen */
+	
+.palsta1{
+	width:660px;
+}
+
+.palsta2{
+	width: 500px;
+	/*border: 1px green solid;*/
+}
+ 
+.palsta1, .palsta2 {
+	float: left;
+}
+	
+	
+#video {
+	display: block;
+	width: 620px;
+	height: 415px; 
+	margin: auto;
+	margin-bottom: 0px;
+	margin-top: 20px;
+	/*border: 4px #000000 outline;*/
+}
+
+#kuvakehys {
+	width:920px;
+	margin: auto;
+	padding-top: 20px;
+	/*border: 1px green solid;*/
+}
+
+#kuvakehys img{
+	border: 5px #ffffff solid;
+}
+
+img.suurenee:hover {
+	-webkit-transition:  4s; /* Safari 3.1-6.0 */
+    transition: width 4s;
+	width: 900px;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+	<title> Vastauslomake </title> 
+	<meta charset="utf-8"/> 
+	<link rel="stylesheet" href="ot3a.css">
+</head> 
+  <body> 
+	<form class="lomake">
+			<div class="lomake vasen">
+				<label for="lnimi">Nimi:</label> 
+				<label for="lsposti">Sähköposti:</label> 
+				<label for="lvastaus">Vastaus: </label> 
+			</div>
+			<div class="lomake oikea">
+				<input class="teksti" type="text" name="nimi">
+				<input class="teksti" type="text" name="sposti">
+				<input class="teksti" type="text" name="vastaus">
+				<br>
+			<div>
+				<input class="nappi" type="submit" value="Lähetä" onclick="alert('Tiedot lähetetty!')">
+				<input class="nappi" type="reset" value="Tyhjennä">
+			</div>
+	</form>
+  </body>
+</html>

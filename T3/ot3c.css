@@ -1,0 +1,87 @@
+	.alustus {
+		margin: 0px;
+		padding: 0px;
+		font-family: Georgia, Verdana, sans-serif;
+	}
+	.leveys{
+		width: 530px;
+	}
+	#tausta {
+		background-color: #bfe2f9;
+		margin: auto;
+		padding-bottom: 5px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.lomake{
+		background: rgb(227,246,252) url("taustakuva.jpg") no-repeat left bottom;
+		margin: auto;
+		/* border: 1px solid red; */
+	}
+	header {
+		color: #69c08a;
+		font-size: 1.25em;
+		text-align: center;
+		padding: 10px;
+		/* border: 1px solid black; */
+	}
+	#alkuosa {
+		width: 100%;
+		padding-top: 10px;
+		/* border: 1px solid yellow; */
+	}
+	label {
+		width:100px;
+		float: left;
+		display: block;
+	}
+	.tekstikentta1 {
+		background-color: #FFF;
+		width: 400px;
+	}
+	.tekstikentta2 {
+		background-color: #FFF;
+		width: 150px;
+	}
+	select {
+		width: 120px;
+		display: block;
+		margin-bottom: 10px;
+	}
+	input {
+		margin-bottom: 10px;
+	}
+	label, span {
+		font-size: 0.8em;
+	}
+	.esim {
+		font-size: 0.9em;
+		text-align: center;	
+		padding-bottom: 10px;
+		display: block;
+		/* border: 1px solid black; */
+	}	
+	.palsta {
+		float: left; 	
+	}
+	.palsta.oikea {
+		width: 270px;
+		/* border: 1px solid green; */
+		}
+	.palsta.vasen {
+		width: 250px;	
+		/* border: 1px solid blue; */
+		}
+	.palstat:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.nappi {
+		display: block;
+		margin: auto;
+		padding-bottom: 10px;
+	}
+	#alkuosa, .palstat {
+		padding-left: 5px;
+	}

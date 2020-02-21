@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<!-- 	file: tranoy.html
+		desc: Norja 2017 matkapäiväkirja: Tranoyn majakka
+		      diaesitys, majakan kuva ja tekstiä
+		date: 14.12.2017
+		auth: Maarit Parkkonen -->
+<html> 
+
+<head>
+	<title> Tranoy - Norja 2017</title> 
+	<meta charset="utf-8"/> 
+	<link rel="stylesheet" href="css/norja.css">
+	<link rel="stylesheet" href="css/tranoy.css">
+</head> 
+
+  <body> 
+	<div id="tausta">		
+		<div id="header">
+			<h1 id="paaotsikko"> Matkalla Norjassa 2017 </h1>
+		</div><!--header-->
+		
+		<!--navigointipalkki-->	
+		<!--alasvetolistan mallina: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover-->
+		<div class="navilinkit">
+			<a href="index.html"><button class="navipainike aktiivi">Etusivu</button></a>
+			<div class="alasveto">
+				<button class="navipainike aktiivi nuoli">Kohteet</button>
+				<div class="vetolista">
+					<a class="aktiivi" href="junkerdal.html">Junkerdal</a>
+					<a class="passiivi" href="#">Tranoy</a>
+					<a class="aktiivi" href="lofootit.html">Lofootit</a>
+				</div><!--vetolista-->
+			</div><!--alasveto-->
+			<a href="info.html"><button class="navipainike aktiivi">Info</button></a>
+			<a href="vihje.html"><button class="navipainike aktiivi">Anna vihje</button></a>	
+		</div><!--navilinkit-->
+		
+		<!--iso majakka-->
+		<div class="palsta1">
+			<img id="majakka" src="kuvat/tranoy/majakka3a.png" alt="Tranoyn majakka">
+		</div><!--palsta1-->
+		
+		<!--asiasisältö-->
+		<div class="palsta2 sisalto">
+			<h2>Tranoy</h2>
+			<br>
+			<div class="diakehys">
+
+				<div class="dia">
+					<div class="jnumero">1 / 4</div>
+					<img src="kuvat/tranoy/tranoy1.jpg">
+					<div class="otsikko">Majakkasaari</div>
+				</div><!--dia-->
+
+				<div class="dia">
+					<div class="jnumero">2 / 4</div>
+					<img src="kuvat/tranoy/tranoy2.jpg">
+					<div class="otsikko">Huipulla</div>
+				</div><!--dia-->
+
+				<div class="dia">
+					<div class="jnumero">3 / 4</div>
+					<img src="kuvat/tranoy/tranoy3.jpg">
+					<div class="otsikko">Lofootit</div>
+				</div><!--dia-->
+
+				<div class="dia">
+					<div class="jnumero">4 / 4</div>
+					<img src="kuvat/tranoy/tranoy4.jpg">
+					<div class="otsikko">Silta</div>
+				</div><!--dia-->
+				
+			</div><!--diakehys-->
+			
+			<!--scriptin malli: https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+			<script>
+				var diaNumero = 0;
+				naytaDiat();
+
+				function naytaDiat() {
+				var i;
+				var diat = document.getElementsByClassName("dia");
+				for (i = 0; i < diat.length; i++) {
+					diat[i].style.display = "none";  
+					}
+				diaNumero++;
+				if (diaNumero > diat.length) {diaNumero = 1}    
+					diat[diaNumero-1].style.display = "block";  
+					setTimeout(naytaDiat, 2500); // dian vaihto 2,5s välein
+					}
+			</script>
+			
+			<br>
+			<h3>Majakan huipulla</h3>
+			<p class="palstat">
+				Tranoyn majakka sijaitsee Norjan luoteisosassa, Hamaroystä pohjoiseen Norjanmeren rannalla pienellä kalliosaarella. 
+				Se on ollut toiminnassa vuodesta 1864 lähtien. Majakka on 28 metriä pitkä ja sen valon kantomatka on 16 meripeninkulmaa.
+				Majakka on suosittu matkailukohde ja sen viereiseen rakennukseen on perustettu pieni ravintola ja majoituspaikka.
+
+				Majakka oli meidän mielestä hieno vierailukohde. Kalliosaari on pieni mutta majoitusliike ja ravintola sijaitsevat 
+				saaren vanhoissa rakennuksissa, joten tunnelma on hyvin säilynyt eikä ihmisiä ollut haitaksi asti. Saarelle käveltiin 
+				valkoista, pitkää kävelysiltaa pitkin.
+
+				Ravintolasta ostimme majakkaan opastuksen. Ilman opasta majakkaan ei pääse. Voin suositella lämpimästi majakassa käyntiä. 
+				Opas vei meidän perheen majakan huipulle asti ja samalla kertoi englanniksi majakan historiasta sekä toimintaperiaatteesta. Eikä hänellä ollut mikään kiire.
+				Maisemat huipulta olivat mahtavat. Edessäpäin siinsivät Lofoottien merestä nousevien vuorten huiput ja sivulle 
+				avautui ääretön meri.
+			</p>
+	
+		</div><!--palsta2-->
+		
+		<div class="clear tekija">
+			<p>Copyright &copy; Maarit Parkkonen, 14.12.2017</p>
+		</div><!--tekija-->	
+	</div><!--tausta-->	
+  </body>
+</html>

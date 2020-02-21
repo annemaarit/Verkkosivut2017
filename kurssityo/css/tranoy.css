@@ -1,0 +1,69 @@
+/* 	file: tranoy.css
+	desc: Norja 2017 matkapäiväkirjan tranoy -sivun tyylit
+	      Huom! sivujen yhteiset tyylit norja.css tiedostossa
+	date: 13.12.2017
+	auth: Maarit Parkkonen */
+
+.palsta1{
+	width:350px;
+}
+
+.palsta2{
+	width: 800px;
+	padding-bottom: 0px;
+	/*border: 1px green solid;*/
+}
+ 
+.palsta1, .palsta2 {
+	float: left;
+}
+	
+#majakka {
+	height:900px;
+	display:block;
+	padding-top: 20px;
+	margin:auto;
+}
+
+/* diakehys */	
+.dia {
+	display:none
+}
+
+.diakehys,.diakehys img{
+	width:650px;
+	height:450px;
+}
+
+.diakehys {
+	position: relative;
+	border: 5px #ffffff solid;	
+	margin: auto;
+	border-bottom: 20px;
+}
+	
+/* kuvaotsikot */
+.otsikko, .jnumero {
+	font-family: Verdana,sans-serif;	
+}
+
+.otsikko {
+	color: #f2f2f2;
+	width:150px;
+	background-color: rgba(0,0,0,0.5);
+	font-size: 20px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 28px;
+	right: 2px;
+	text-align: center;
+}
+
+/* kuvan järjestysnumero*/
+.jnumero {
+	color: #000000;
+	font-size: 14px;
+	padding: 28px 12px;
+	position: absolute;
+	top: 0;
+	}

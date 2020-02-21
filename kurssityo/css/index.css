@@ -1,0 +1,51 @@
+/* 	file: index.css
+	desc: Norja 2017 matkapäiväkirjan etusivun tyylit
+		  Huom! sivujen yhteiset tyylit norja.css tiedostossa
+	date: 10.12.2017
+	auth: Maarit Parkkonen */
+	
+.vasen_palsta, .oikea_palsta {   
+    float: left;
+}
+
+.vasen_palsta {   
+    width: 65%;
+}
+
+.oikea_palsta {
+    width: 33%;
+    padding-left: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a.alleviivaa {
+	text-decoration: underline;
+	color: blue;
+}
+
+.sisalto img{
+	width: 500px;
+}
+
+.sisalto_reuna img{
+	width: 350px;
+}
+
+.sisalto img, .sisalto_reuna img {
+	display: block;
+	margin:auto;
+	border: 2px white solid;
+}
+
+
+/* palstajaon lopetus */
+.palsta_jako:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
